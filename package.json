@@ -1,0 +1,27 @@
+{
+  "name": "@nacelle/vuepress-docs-theme",
+  "version": "1.0.0",
+  "description": "Extension of vuepress default theme for Nacelle docs",
+  "main": "index.js",
+  "author": "Nacelle Dev Team",
+  "license": "MIT",
+  "keywords": [
+    "documentation",
+    "generator",
+    "vue",
+    "vuepress",
+    "theme",
+    "nacelle"
+  ],
+  "homepage": "https://github.com/getnacelle/vuepress-docs-theme",
+  "bugs": {
+    "url": "https://github.com/getnacelle/vuepress-docs-theme/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getnacelle/vuepress-docs-theme.git"
+  },
+  "dependencies": {
+    "@vuepress/theme-default": "^1.5.2"
+  }
+}
