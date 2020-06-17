@@ -1,5 +1,5 @@
 {
-  "name": "@nacelle/vuepress-docs-theme",
+  "name": "@nacelle/vuepress-theme-docs",
   "version": "1.0.0",
   "description": "Extension of vuepress default theme for Nacelle docs",
   "main": "index.js",
@@ -13,13 +13,13 @@
     "theme",
     "nacelle"
   ],
-  "homepage": "https://github.com/getnacelle/vuepress-docs-theme",
+  "homepage": "https://github.com/getnacelle/vuepress-theme-docs",
   "bugs": {
-    "url": "https://github.com/getnacelle/vuepress-docs-theme/issues"
+    "url": "https://github.com/getnacelle/vuepress-theme-docs/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/getnacelle/vuepress-docs-theme.git"
+    "url": "git+https://github.com/getnacelle/vuepress-theme-docs.git"
   },
   "dependencies": {
     "@vuepress/theme-default": "^1.5.2"
