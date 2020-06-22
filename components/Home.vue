@@ -54,7 +54,7 @@ export default {
     .image-text {
       font-size: 14px;
       line-height: 18px;
-      color: $accentColor;
+      color: $secondaryColor;
       font-weight: 400;
       margin: 0;
     }

@@ -129,7 +129,7 @@ function css(el, property) {
   }
 
   .site-type {
-    color: $accentColor;
+    color: $secondaryColor;
     margin-left: 2px;
   }
 
