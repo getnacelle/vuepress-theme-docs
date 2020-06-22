@@ -17,7 +17,6 @@ import NavLinks from '@parent-theme/components/NavLinks.vue'
 export default {
   name: 'Sidebar',
   components: {
-    ParentSidebar,
     SidebarLinks,
     NavLinks,
   },
@@ -27,6 +26,10 @@ export default {
 
 <style lang="stylus">
 @require '../styles/palette.styl';
+
+.page {
+  padding-left: 436px;
+}
 
 .sidebar {
   top: 85px;
@@ -71,10 +74,6 @@ export default {
     padding-bottom: 2px;
   }
 
-  .sidebar-sub-headers:last-of-type {
-    padding-bottom: 10px;
-  }
-
   .sidebar-group.is-sub-group > .sidebar-group-items > li > .sidebar-link {
     padding-top: 2px;
     padding-bottom: 2px;
@@ -107,6 +106,18 @@ export default {
   .arrow.down {
     border-top: 4px solid $accentColor;
   }
+}
 
+@media (max-width: $MQNarrow) {
+  .sidebar {
+    top: 0;
+    padding-top: 3.6rem;
+    transform: translateX(-100%);
+    transition: transform .2s ease;
+  }
+
+  .page {
+    padding-left: 0;
+  }
 }
 </style>

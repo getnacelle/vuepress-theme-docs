@@ -88,10 +88,12 @@ export default {
       {
         title: 'Resources',
         links: [
-          {
-            title: 'Blog',
-            path: 'https://www.getnacelle.com/blog',
-          },
+          // Blog currently unvavailable on the website
+          // We can add this back in when it's available
+          // {
+          //   title: 'Blog',
+          //   path: 'https://www.getnacelle.com/blog',
+          // },
           {
             title: 'FAQs',
             path: 'https://www.getnacelle.com/faqs',

@@ -1,0 +1,54 @@
+.theme-default-content:not(.custom) > h1:first-child {
+  margin-top: 0;
+  padding-top: 77px;
+}
+
+.theme-default-content:not(.custom) > h1:first-child + p {
+  margin-top: 24px;
+}
+
+.theme-default-content:not(.custom) > h2 {
+  margin-top: 0;
+  padding-top: 40px;
+  margin-bottom: 23px;
+}
+
+.theme-default-content:not(.custom) > h3 {
+  margin-top: 0;
+  padding-top: 23px;
+}
+
+.page-edit {
+  display: none;
+}
+
+.prev, .next {
+  font-weight: 700;
+  color: $accentColor;
+}
+
+.prev a, .next a {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.56px;
+  line-height: 40px;
+}
+
+.custom-block.tip {
+  border-color: $secondaryColor;
+}
+
+@media (max-width: $MQNarrow) {
+  .theme-container.sidebar-open .sidebar {
+    transform: translateX(0);
+    padding-top: 85px;
+  }
+}
+
+@media (min-width: 960px) and (max-width: $MQTablet) {
+  .theme-container .page footer {
+    .can-hide {
+      display: none;
+    }
+  }
+}

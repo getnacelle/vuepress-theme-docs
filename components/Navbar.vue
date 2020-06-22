@@ -1,5 +1,7 @@
 <template>
   <header class="navbar">
+    <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')" />
+
     <RouterLink :to="$localePath" class="home-link">
       <div class="site-logo-layout">
         <img
@@ -92,6 +94,10 @@ function css(el, property) {
 <style lang="stylus">
 @require '../styles/palette.styl';
 
+.sidebar-button {
+  padding: 22px 24px;
+}
+
 .navbar {
   padding: 25px 56px;
   line-height: 20px;
@@ -154,6 +160,7 @@ function css(el, property) {
   a {
     font-size: 15px;
     line-height: 20px;
+    padding-left: 0;
   }
 }
 
@@ -164,6 +171,14 @@ function css(el, property) {
 
   .navbar {
     padding: 25px 40px;
+
+    a {
+      padding-left: 42px;
+    }
+  }
+
+  .sidebar-button {
+    display: block;
   }
 }
 
