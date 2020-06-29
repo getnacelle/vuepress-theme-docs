@@ -3,12 +3,13 @@
     <div class="content-container">
       <header class="hero">
         <h4 v-if="data.imageText" class="image-text">{{ data.imageText }}</h4>
-
-        <img
-          v-if="data.heroImage"
-          :src="$withBase(data.heroImage)"
-          :alt="data.heroAlt || 'hero'"
-        />
+        <a v-if="data.heroImage" :href="$withBase(data.heroImageLink || '')">
+          <img
+            v-if="data.heroImage"
+            :src="$withBase(data.heroImage)"
+            :alt="data.heroAlt || 'hero'"
+          />
+        </a>
       </header>
       <Content class="theme-default-content custom" />
 
