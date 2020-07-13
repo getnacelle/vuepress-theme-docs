@@ -52,38 +52,38 @@ export default {
         links: [
           {
             title: 'For Merchants',
-            url: 'https://www.getnacelle.com/headless-commerce-for-merchants',
+            url: 'https://www.getnacelle.com/headless-commerce-for-merchants'
           },
           {
             title: 'For Developers',
-            url: 'https://www.getnacelle.com/jamstack-ecommerce-for-developers',
+            url: 'https://www.getnacelle.com/jamstack-ecommerce-for-developers'
           },
           {
             title: 'For Agencies',
-            url: 'https://www.getnacelle.com/headless-commerce-for-agencies',
-          },
-        ],
+            url: 'https://www.getnacelle.com/headless-commerce-for-agencies'
+          }
+        ]
       },
       {
         title: 'Company',
         links: [
           {
             title: 'Team',
-            path: 'https://www.getnacelle.com/team',
+            url: 'https://www.getnacelle.com/team'
           },
           {
             title: 'Careers',
-            path: 'https://www.getnacelle.com/team-and-careers',
+            url: 'https://www.getnacelle.com/team-and-careers'
           },
           {
             title: 'Partners',
-            path: 'https://www.getnacelle.com/become-a-partner',
+            url: 'https://www.getnacelle.com/become-a-partner'
           },
           {
             title: 'Contact',
-            path: 'https://www.getnacelle.com/contact-us',
-          },
-        ],
+            url: 'https://www.getnacelle.com/contact-us'
+          }
+        ]
       },
       {
         title: 'Resources',
@@ -92,29 +92,29 @@ export default {
           // We can add this back in when it's available
           // {
           //   title: 'Blog',
-          //   path: 'https://www.getnacelle.com/blog',
+          //   url: 'https://www.getnacelle.com/blog',
           // },
           {
             title: 'FAQs',
-            path: 'https://www.getnacelle.com/faqs',
-          },
-        ],
-      },
+            url: 'https://www.getnacelle.com/faqs'
+          }
+        ]
+      }
     ],
     legal: {
       title: 'NACELLE',
       links: [
         {
           title: 'Privacy Policy',
-          path: 'https://www.getnacelle.com/privacy-policy',
+          url: 'https://www.getnacelle.com/privacy-policy'
         },
         {
           title: 'Terms of Use',
-          path: 'https://www.getnacelle.com/terms-and-conditions',
-        },
-      ],
-    },
-  }),
+          url: 'https://www.getnacelle.com/terms-and-conditions'
+        }
+      ]
+    }
+  })
 }
 </script>
 
