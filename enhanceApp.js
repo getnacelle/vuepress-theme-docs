@@ -1,1 +1,1 @@
-import 'customStyles/customFont.styl'
+import 'customStyles/customFont.styl';

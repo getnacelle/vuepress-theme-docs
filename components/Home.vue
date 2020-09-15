@@ -23,18 +23,17 @@
 </template>
 
 <script>
-import NavLink from '@parent-theme/components/NavLink.vue'
-import Footer from './Footer.vue'
+import Footer from './Footer.vue';
 
 export default {
   name: 'Home',
-  components: { NavLink, Footer },
+  components: { Footer },
   computed: {
     data() {
-      return this.$page.frontmatter
-    },
-  },
-}
+      return this.$page.frontmatter;
+    }
+  }
+};
 </script>
 
 <style lang="stylus">
