@@ -10,18 +10,17 @@
 </template>
 
 <script>
-import ParentSidebar from '@parent-theme/components/Sidebar.vue'
-import SidebarLinks from '@parent-theme/components/SidebarLinks.vue'
-import NavLinks from '@parent-theme/components/NavLinks.vue'
+import SidebarLinks from '@parent-theme/components/SidebarLinks.vue';
+import NavLinks from '@parent-theme/components/NavLinks.vue';
 
 export default {
   name: 'Sidebar',
   components: {
     SidebarLinks,
-    NavLinks,
+    NavLinks
   },
-  props: ['items'],
-}
+  props: ['items']
+};
 </script>
 
 <style lang="stylus">

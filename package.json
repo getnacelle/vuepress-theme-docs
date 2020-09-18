@@ -13,6 +13,9 @@
     "theme",
     "nacelle"
   ],
+  "scripts": {
+    "lint": "eslint ./components/*.vue"
+  },
   "homepage": "https://github.com/getnacelle/vuepress-theme-docs",
   "bugs": {
     "url": "https://github.com/getnacelle/vuepress-theme-docs/issues"
@@ -23,5 +26,26 @@
   },
   "dependencies": {
     "@vuepress/theme-default": "^1.5.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1"
+  },
+  "lint-staged": {
+    "src/**/*.(js|ts)": [
+      "prettier --write",
+      "npm run lint"
+    ],
+    "*{json, md}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
