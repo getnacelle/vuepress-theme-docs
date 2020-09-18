@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import PageEdit from '@parent-theme/components/PageEdit.vue'
-import PageNav from '@parent-theme/components/PageNav.vue'
-import Footer from './Footer.vue'
+import PageEdit from '@parent-theme/components/PageEdit.vue';
+import PageNav from '@parent-theme/components/PageNav.vue';
+import Footer from './Footer.vue';
 
 export default {
   components: { PageEdit, PageNav, Footer },
-  props: ['sidebarItems'],
-}
+  props: ['sidebarItems']
+};
 </script>
