@@ -4,9 +4,10 @@
       <div class="banner-container" v-if="open">
         <p>{{ message }}</p>
         <nacelle-button
+          v-if="buttonPath"
           class="nacelle-banner-button"
-          @click="goTo(buttonPath)"
           color="secondary"
+          :button-path="buttonPath"
           >{{ buttonText }}</nacelle-button
         >
         <img
@@ -54,9 +55,6 @@ export default {
     }, 1000)
   },
   methods: {
-    goTo(path) {
-      window.open(path, '_blank')
-    },
     closeBanner() {
       this.open = false
     }

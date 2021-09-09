@@ -1,6 +1,6 @@
 <template>
   <div :class="block ? 'block' : null" class="nacelle-button">
-    <button :class="color" @click="clickHandler()">
+    <a :class="color" :href="buttonPath" target="_blank">
       <span>
         <slot />
       </span>
@@ -8,7 +8,7 @@
         <div v-if="icon" v-html="icon" class="nacelle-button-icon"></div>
         <img v-else src="/nacelle-arrow-right.svg" alt="arrow-right" />
       </template>
-    </button>
+    </a>
   </div>
 </template>
 
@@ -67,10 +67,10 @@ export default {
     }
   }
 }
-button {
+a {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: space-between;
   text-decoration: none;
   border: 2px solid #00baff;
