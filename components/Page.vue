@@ -2,6 +2,8 @@
   <main class="page">
     <slot name="top" />
 
+    <NewDocsBanner />
+
     <Content class="theme-default-content" />
     <PageEdit />
 
@@ -19,9 +21,10 @@ import PageEdit from '@parent-theme/components/PageEdit.vue';
 import PageNav from '@parent-theme/components/PageNav.vue';
 import Footer from './Footer.vue';
 import Banner from './Banner.vue';
+import NewDocsBanner from './NewDocsBanner.vue';
 
 export default {
-  components: { PageEdit, PageNav, Footer, Banner },
+  components: { PageEdit, PageNav, Footer, Banner, NewDocsBanner },
   props: ['sidebarItems']
 };
 </script>
