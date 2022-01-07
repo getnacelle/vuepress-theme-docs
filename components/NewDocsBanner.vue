@@ -1,13 +1,13 @@
 <template>
   <div class="new-docs-banner">
-    <div>⚠️</div>
-    <p>
-      You are viewing the v1 Nacelle Docs.<br />
-      For the newest updates, visit <a href="https://nacelle.com/docs/">nacelle.com/docs</a>.
-    </p>
-    <div>
-      ⚠️
+    <div class="new-docs-banner__warning">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M23 21L12 2L1 21H23ZM11 18V16H13V18H11ZM11 14H13V10H11V14Z" fill="#FFC805"/>
+      </svg>
     </div>
+    <p>
+      <b>You are viewing the v1 Nacelle Docs.</b> For the newest updates, visit <a href="https://nacelle.com/docs/">nacelle.com/docs</a>.
+    </p>
   </div>
 </template>
 
@@ -25,8 +25,6 @@ export default {
 <style lang="scss" scoped>
 .new-docs-banner {
   height: auto;
-  /* background: rgba(221, 15, 23, 0.2);
-  border-bottom: 1px solid rgb(221, 15, 23); */
   background: #4464cc;
   color: white;
   padding: 1.5rem 1rem;
@@ -35,8 +33,7 @@ export default {
   justify-content: center;
 
   p {
-    margin: 0 1.5rem;
-    text-align: center;
+    margin: 0;
   }
 
   a {
@@ -46,6 +43,10 @@ export default {
     &:hover {
       text-decoration: none;
     }
+  }
+
+  .new-docs-banner__warning {
+    margin-right: 10px;
   }
 }
 </style>
