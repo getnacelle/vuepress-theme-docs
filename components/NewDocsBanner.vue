@@ -6,7 +6,7 @@
       </svg>
     </div>
     <p>
-      <b>You are viewing the v1 Nacelle Docs.</b> For the newest updates, visit <a href="https://nacelle.com/docs/">nacelle.com/docs</a>.
+      <b>You are viewing the v1 Nacelle Docs for existing merchants.</b>New merchants can find the V2 docs here: <a href="https://nacelle.com/docs/">nacelle.com/docs</a>.
     </p>
   </div>
 </template>
